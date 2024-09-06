@@ -19,6 +19,7 @@ public class Merge {
         buttonPanel.add(new JButton("mybutton"));
 	myframe.setVisible(true); // goes with line above
 	myframe.repaint();*/
+	dgdhgh
 	LinkedList l1 = new LinkedList(); // just a dummy
 	l1.add(new Integer(5)); //test
 	Integer i1 = (Integer)l1.getFirst();
