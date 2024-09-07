@@ -20,7 +20,7 @@ public class PersonList {
                 String id = data[0].trim();
                 String firstName = data[1].trim();
                  String lastName = data[2].trim();
-                Person person = new Person(id, firstName, lastName);
+                Person person = new Person(firstName, lastName,id);
                 list.add(person);
             }
         }
@@ -36,7 +36,7 @@ public class PersonList {
         writer.flush();
     }
 
-    // Find method that searches for a person by ID and returns the index or -1 if not found
+    // Find method will look for a person by ID and returns the index or -1 if not found
     public int find(String sid) {
         for (int i = 0; i < list.size(); i++) {
             if (list.get(i).getId().equals(sid)) {
