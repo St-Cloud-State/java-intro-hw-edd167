@@ -1,7 +1,7 @@
 public class Pesron{
-    Private String firstName;
-    Private String lastName;
-    Private String id;
+    private String firstName;
+    private String lastName;
+    private String id;
 
 // constructor
 public Pesron(String firstName,String lastName,String id){
@@ -21,15 +21,14 @@ public Pesron(String firstName,String lastName,String id){
      }
 // toString method 
 public String toString(){
-    String myString = firstName +"\n"+lastName+ "\n" +id"\n"
+    String myString = firstName +"\n"+lastName+ "\n" +id+"\n";
     return myString;
 }
 }
 public class Main{
-    public static void main(String[],args){
-        Pesron p1= new Pesron();
-       System.out.println(p1.getFirstname("edwin"));
-       System.out.println(p1.getLastname("Maikara"));
-       System.out.println(p1.getid("56"));
+    public static void main(String[] args){
+        Pesron p1= new Pesron("edwin","Maikara","35376");
+       System.out.println(p1);
+       
     }
 }
