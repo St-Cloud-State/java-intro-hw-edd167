@@ -1,10 +1,10 @@
-public class Pesron{
+public class Person{
     private String firstName;
     private String lastName;
     private String id;
 
 // constructor
-public Pesron(String firstName,String lastName,String id){
+public Person(String firstName,String lastName,String id){
     this.firstName=firstName;
     this.lastName=lastName;
     this.id=id;
@@ -27,7 +27,7 @@ public String toString(){
 }
 public class Main{
     public static void main(String[] args){
-        Pesron p1= new Pesron("edwin","Maikara","35376");
+        Person p1= new Person("edwin","Maikara","35376");
        System.out.println(p1);
        
     }
