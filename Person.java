@@ -24,11 +24,11 @@ public String toString(){
     String myString = firstName +"\n"+lastName+ "\n" +id+"\n";
     return myString;
 }
-}
-public class Main{
-    public static void main(String[] args){
+public static void main(String[] args){
         Person p1= new Person("edwin","Maikara","35376");
        System.out.println(p1);
        
     }
 }
+
+    
