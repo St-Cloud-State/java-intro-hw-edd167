@@ -7,13 +7,13 @@ public class MyMain {
         PersonList personList = new PersonList();
         
         // Create an input file with data for person objects
-        String inputFile = "persons.txt";
+        String inputFile = "people.txt";
         try (InputStream input = new FileInputStream(inputFile)) {
             personList.store(input); // Use the store method of PersonList
         }
 
         // Display the person objects in the PersonList
-        System.out.println("Person list:");
+        System.out.println("People list:");
         try (OutputStream output = System.out) {
             personList.display(output); // Use the display method of PersonList
         }
