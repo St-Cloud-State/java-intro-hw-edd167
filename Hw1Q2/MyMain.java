@@ -20,7 +20,7 @@ public class MyMain {
         scanner.close();
     }
 
-    // Display method that writes all persons from LinkedList to the output stream
+    // Display method that writes all people details from LinkedList to the output stream
     public static void display(OutputStream output, LinkedList<Person> list) throws IOException {
         PrintWriter writer = new PrintWriter(output);
         for (Person person : list) {
@@ -44,7 +44,7 @@ public class MyMain {
         LinkedList<Person> personList = new LinkedList<>();
         
         // Create an input file with data for person objects
-        String inputFile = "persons.txt";
+        String inputFile = "people.txt";
         try (InputStream input = new FileInputStream(inputFile)) {
             store(input, personList);
         }
