@@ -147,7 +147,7 @@ public class WarehouseSystem {
     }
 
     // Helper: Find product by ID
-    private Product findProductById(int productId) {
+    public Product findProductById(int productId) {
         for (Product product : products) {
             if (product.getProductId() == productId) {
                 return product;
