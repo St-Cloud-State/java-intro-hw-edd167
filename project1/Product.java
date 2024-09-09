@@ -1,32 +1,36 @@
-//class to track the products in the warehouse
-import java.util.ArrayList;
-public class Product{
+public class Product {
+    private static int idCounter = 0;
     private int productId;
     private String name;
     private int stockQuantity;
     private double salePrice;
-//construct for class product
-    public Product(String name,int stockQuantity,double salePrice){
-        this.name=name;
-        this.stockQuantity=stockQuantity;
-        this.salePrice=salePrice;
+
+    public Product(String name, int stockQuantity, double salePrice) {
+        this.productId = ++idCounter;
+        this.name = name;
+        this.stockQuantity = stockQuantity;
+        this.salePrice = salePrice;
     }
-    //getter and setter methods
-    public int getProductId(){
+
+    // Getters and setters...
+
+    public int getProductId() {
         return productId;
     }
-    public void setProductId(int productId) {
-        this.productId = productId;
-    public String getName(){
+
+    public String getName() {
         return name;
     }
-    public int getStockQuantity(){
+
+    public int getStockQuantity() {
         return stockQuantity;
     }
-    public double getSalePrice(){
-        return salePrice;
+
+    public void updateStockQuantity(int quantity) {
+        this.stockQuantity += quantity;
     }
-    public int updateStockQuantity(int quantity){
-          return this.stockQuantity=+ quantity;
+
+    public double getSalePrice() {
+        return salePrice;
     }
 }

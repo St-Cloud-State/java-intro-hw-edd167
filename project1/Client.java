@@ -1,6 +1,7 @@
 import java.util.ArrayList;
 
 public class Client {
+    private static int idCounter = 0;
     private int clientId;
     private String name;
     private String address;
@@ -10,10 +11,10 @@ public class Client {
     private ArrayList<Order> orders;
 
     public Client(String name, String address) {
-        this.clientId = clientId;
+        this.clientId = ++idCounter;
         this.name = name;
         this.address = address;
-        this.balance = 0.0;
+        this.balance = 0;
         this.transactions = new ArrayList<>();
         this.wishlist = new ArrayList<>();
         this.orders = new ArrayList<>();
