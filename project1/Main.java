@@ -9,8 +9,8 @@ public class Main {
         boolean exit = false;
 
         // Sample data (clients and products)
-        warehouse.addClient("John Doe", "123 Main St");
-        warehouse.addClient("Jane Smith", "456 Elm St");
+        warehouse.addClient("bob jame", "123 Main St");
+        warehouse.addClient("Jane willaim", "456 Elm St");
 
         ArrayList<Product> newProducts = new ArrayList<>();
         newProducts.add(new Product("Laptop", 10, 1000.00));
