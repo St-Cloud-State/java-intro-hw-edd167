@@ -1,14 +1,12 @@
 //class to track the products in the warehouse
 import java.util.ArrayList;
 public class Product{
-    private static int idCounter=0;
     private int productId;
     private String name;
     private int stockQuantity;
     private double salePrice;
 //construct for class product
     public Product(String name,int stockQuantity,double salePrice){
-        this.productId=++idCounter;
         this.name=name;
         this.stockQuantity=stockQuantity;
         this.salePrice=salePrice;
@@ -17,6 +15,8 @@ public class Product{
     public int getProductId(){
         return productId;
     }
+    public void setProductId(int productId) {
+        this.productId = productId;
     public String getName(){
         return name;
     }
