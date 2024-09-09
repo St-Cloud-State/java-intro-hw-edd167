@@ -39,7 +39,7 @@ public class WarehouseSystem {
             if (product.getStockQuantity() >= quantityRequested) {
                 // Add to the order and update stock
                 order.addProduct(product, quantityRequested);
-                product.updateStockQuantity(-quantityRequested);
+                product.adjustStock(-quantityRequested);
             } else {
                 // Not enough stock, add to waitlist
                 waitlist.put(product, waitlist.getOrDefault(product, 0) + quantityRequested);
@@ -97,7 +97,7 @@ public class WarehouseSystem {
                     quantity = 0;
                 }
             }
-            product.updateStockQuantity(quantity);  // Update stock with remaining quantity
+            product.adjustStock(quantity);  // Update stock with remaining quantity
             System.out.println("Shipment accepted for product: " + product.getName() + ", updated stock: " + product.getStockQuantity());
         } else {
             System.out.println("Product not found!");
