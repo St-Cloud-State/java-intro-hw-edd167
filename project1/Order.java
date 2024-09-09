@@ -1,4 +1,4 @@
-import java.util.HashMap;
+import java.util.Map;
 public class Order{
     private static int idCounter=0;
     private int orderId;

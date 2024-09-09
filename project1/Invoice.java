@@ -1,4 +1,4 @@
-import java.util.HashMap
+import java.util.HashMap;
 public class Invoice {
     private static int idCounter = 0;
     private int invoiceId;

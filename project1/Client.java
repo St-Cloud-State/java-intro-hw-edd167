@@ -1,4 +1,4 @@
-public class Client {
+public class Client{
 private static int idCounter=0;
 private int clientId;
 private String name;

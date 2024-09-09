@@ -1,6 +1,7 @@
 //class to track the products in the warehouse
+import java.util.ArrayList;
 public class Product{
-    private static idCounter=0;
+    private static int idCounter=0;
     private int productId;
     private String name;
     private int stockQuantity;
