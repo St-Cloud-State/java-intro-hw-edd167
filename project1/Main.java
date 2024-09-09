@@ -94,8 +94,8 @@ public class Main {
                     break;
 
                 case 6:
-                    System.out.print("Enter product ID: ");
-                    productId = scanner.nextInt();
+                    //System.out.print("Enter product ID: ");
+                    //productId = scanner.nextInt();
                     System.out.print("Enter shipment quantity: ");
                     quantity = scanner.nextInt();
                     warehouse.acceptShipment(productId, quantity);
