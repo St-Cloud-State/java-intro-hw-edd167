@@ -137,7 +137,7 @@ public class WarehouseSystem {
     }
 
     // Helper: Find client by ID
-    private Client findClientById(int clientId) {
+    public Client findClientById(int clientId) {
         for (Client client : clients) {
             if (client.getClientId() == clientId) {
                 return client;
