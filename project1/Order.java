@@ -1,23 +1,35 @@
-import java.util.Map;
-public class Order{
-    private static int idCounter=0;
-    private int orderId;
+import java.util.HashMap;
+
+public class Order {
     private Client client;
-    private HashMap<product,Interger>orderItems;
-    private double totalCost;
+    private HashMap<Product, Integer> orderItems;
 
-    public Order(Client client){
-        this.orderId=++idCounter;
-        this.client=client;
-        this.totalCost=0;
-        this.orderItems=new HashMap<>();
+    public Order(Client client) {
+        this.client = client;
+        this.orderItems = new HashMap<>();
+    }
 
+    // Method to add a product to the order
+    public void addProduct(Product product, int quantity) {
+        orderItems.put(product, orderItems.getOrDefault(product, 0) + quantity);
     }
-    public void addProduct(Product product,int quantity){
-    orderItems.put(product,quantity);
-    totalCost=+ product.getSalePrice()*quantity;
+
+    // Getter for client
+    public Client getClient() {
+        return client;
     }
-    public double getTotalCost(){
-        return totalCost;
+
+    // Getter for order items
+    public HashMap<Product, Integer> getOrderItems() {
+        return orderItems;
+    }
+
+    // Additional method to get the total number of items in the order
+    public int getTotalItems() {
+        int totalItems = 0;
+        for (int quantity : orderItems.values()) {
+            totalItems += quantity;
+        }
+        return totalItems;
     }
 }
