@@ -33,4 +33,7 @@ public class Product {
     public double getSalePrice() {
         return salePrice;
     }
+    public int setProductId(){
+        return productId;
+    }
 }
